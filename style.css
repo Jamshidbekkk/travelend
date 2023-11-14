@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root {
+   --ri: 'Ribeye', serif;
+   --ge: 'Gelasio', serif;
+   --ro: 'Roboto', sans-serif;
+}
+
+body {
+    height: 10000px;
+}
+
+/* Universal codes */
+
+h1.title {
+    font-size: 43px;
+    font-weight: 500;
+    line-height: 60px;
+    color: #000000;
+    font-family: var(--ge);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p.info {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29px;
+    color: #000000;
+    font-family: var(--ro);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2.img-title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    color: #000000;
+    font-family: var(--ge);
+    text-align: center;
+    margin: 20px 0px;
+}
+
+h3.title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    color: #000000;
+    font-family: var(--ge);
+    margin: 15px 0;
+}
+
+p.city {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #000000;
+    font-family: var(--ro);
+}
+
+p.rate {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #000000;
+    font-family: var(--ro);
+}
+
+p.stay {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #000000;
+    font-family: var(--ro);
+    margin: 10px 0px;
+}
+
+p.price {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    color: #000000;
+    font-family: var(--ro);
+}
+
+h3.new-places {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+    color: #000000;
+    font-family: var(--ge);
+    margin: 10px 0;
+}
+
+p.description {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29px;
+    color: #000000;
+    font-family: var(--ro);
+    margin-bottom: 10px;
+}
+
+p.email {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #000000;
+    font-family: var(--ro);
+}
+
+.footer-nav {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 6%;
+    font-family: var(--ro);
+    color: #000000;
+    margin: 10px 0px;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    background: url("./images/Rectangle\ 31.png") no-repeat left / cover;
+    padding-bottom: 200px;
+    margin-bottom: 100px;
+}
+
+.header-nav {
+    width: 1024px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.header-nav .logo {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 6%;
+    color: #FFFFFF;
+    font-family: var(--ri);
+}
+
+.header-nav ul {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 20px;
+}
+
+.header-nav ul li a {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    color: #FFFFFF;
+    font-family: var(--ro);
+}
+
+.header-nav button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #C9453B;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: var(--ro);
+    color: #FFFFFF;
+}
+
+.header-title {
+    width: 1024px;
+    margin: auto;
+}
+
+.header-title h1 {
+    padding-top: 160px;
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 78px;
+    color: #FFFFFF;
+    font-family: var(--ge);
+}
+
+.header-title p {
+    padding: 30px 0px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29px;
+    color: #FFFFFF;
+    font-family: var(--ro);
+}
+
+.header-title button {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #FFFFFF;
+    font-family: var(--ro);
+    background-color: #C9453B;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+
+/* Section first*/
+
+section.first {
+    width: 1024px;
+    margin: auto;
+    margin-bottom: 120px;
+}
+
+.images {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 6, 35, 0);
+    border-radius: 5px;
+}
+
+.popular-locations {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 20px;
+}
+
+
+/* Section special-offers */
+
+.places {
+    width: 262px;
+}
+
+.geo-location {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.best-locations{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons {
+    text-align: center;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 120px;
+}
+
+.icons div {
+    margin: 0px 50px;
+}
+
+
+/* Section blogs */
+
+.blogs {
+    width: 1100px;
+    margin: auto;
+    margin-bottom: 200px;
+}
+
+.blog {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog .left .first-right {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.blog .left .first-right div {
+    margin-left: 10px;
+}
+
+
+/* Footer */
+
+footer {
+    width: 100%;
+    background-color: rgba(38, 148, 153, 0.04);
+    padding: 50px 0;
+}
+
+footer .main-footer {
+    width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .main-footer h1 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 6%;
+    font-family: var(--ri);
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+footer .main-footer .traveland .social-media img{
+    margin-right: 20px;
+}
+
+footer .main-footer .subscribe p{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 6%;
+    font-family: var(--ro);
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+footer .main-footer .subscribe input {
+    padding: 12px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+footer .main-footer .subscribe input::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 6%;
+    font-family: var(--ro);
+    color: #000000;
+}
+
+footer .main-footer .subscribe button {
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 6%;
+    font-family: var(--ro);
+    color: #FFFFFF;
+    background-color: #C9453B;
+    border: none;
+    border-radius: 5px;
+}
